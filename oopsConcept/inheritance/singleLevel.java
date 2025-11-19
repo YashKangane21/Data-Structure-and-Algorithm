@@ -1,6 +1,6 @@
 package oopsConcept.inheritance;
 
-public class single {
+public class singleLevel {
     public static void main(String[] args) {
         dog d1 = new dog();
         d1.sound();
