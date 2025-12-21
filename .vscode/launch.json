@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "printNum",
+            "request": "launch",
+            "mainClass": "a11_recursion.printNum",
+            "projectName": "DSA JAVA Course_c371eaa9"
+        },
+        {
+            "type": "java",
             "name": "PrimeNumber",
             "request": "launch",
             "mainClass": "e_function.PrimeNumber",
