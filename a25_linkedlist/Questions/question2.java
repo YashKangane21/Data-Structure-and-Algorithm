@@ -131,9 +131,6 @@ public class question2 {
             prev = curr;
             curr = Next;
         }
-
-        Node 
-
         //alternate merge
     }
     public static void main(String[] args) {
