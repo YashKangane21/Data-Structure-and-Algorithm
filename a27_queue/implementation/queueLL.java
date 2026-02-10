@@ -84,7 +84,6 @@ public class queueLL {
             System.out.print("Enter your choice: ");
 
             choice = sc.nextInt();
-
             switch(choice){
                 case 1:
                     System.out.print("Enter element to add: ");
