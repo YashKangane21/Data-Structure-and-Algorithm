@@ -10,7 +10,7 @@ public class code {
             for(int i=0; i<26; i++){
                 children[i] = null;
             }
-            eow = false;
+            eow = false;    
         }
     }
     public static Node root = new Node();
