@@ -108,6 +108,21 @@ public class binary_code {
 
             return ls + rs + root.data;
         }
+
+        //diameter
+        public static int diameter(node root){
+            if(root == null){
+                return 0;
+            }
+            int leftDia = diameter(root.left);
+            int leftHeight = height(root.left);
+            int rightDia = diameter(root.right);
+            int rightHeight = height(root.right);
+
+            int selfDia = leftHeight + rightHeight + 1;
+
+            return Math.max(selfDia, Math.max(leftDia, rightDia));
+        }
     }
     public static void main(String[] args) {
         int nodes[] = {1,2,4,-1,-1,5,-1,-1,3,-1,6,-1,-1};
@@ -134,5 +149,6 @@ public class binary_code {
 
         System.out.println("Count of nodes : " + tree.countNodes(root));
         System.out.println("Sum of nodes : " + tree.sumofNodes(root));
+        System.out.println("Diameter : " + tree.diameter(root));
     }
 }
